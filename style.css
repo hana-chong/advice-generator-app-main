@@ -1,0 +1,99 @@
+/* Primary
+Light Cyan: hsl(193, 38%, 86%)
+Neon Green: hsl(150, 100%, 66%)
+Neutral
+Grayish Blue: hsl(217, 19%, 38%)
+Typography
+Body Copy
+Font size (quote): 28px
+Font
+Family: Manrope
+Weights: 800 */
+
+body {
+    font-family: Manrope;
+    background-color: hsl(218, 23%, 16%);
+   }
+.container {
+    background-color:hsl(217, 19%, 24%);
+    height: 325px;
+    width: 325px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+h1 {
+    font-size: 11px;
+    letter-spacing: .35em;
+    text-align: center;
+    margin: 25px;
+    font-weight: normal;
+    color:hsl(150, 100%, 66%);
+}
+p {
+    color:hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+    margin: 15px;
+}
+.desk-img {
+    display: none;
+}
+.mobile-img {
+    width: 275px;
+    position: absolute; 
+    top: 77%;
+    transform: translateY(-50%);
+    left: 25px; 
+    z-index: 1;
+}
+.dice-img{
+    padding: 17.5px;
+    width: 25px;
+}
+.redo-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute; 
+    top: 100%;
+    transform: translateY(-50%);
+    left: 132px; 
+    z-index: 1;
+    background-color: hsl(150, 100%, 66%);
+}
+.redo-btn:hover{
+    background-color: hsl(150, 100%, 75%);
+}
+.redo-btn:active{
+    background-color: hsl(150, 56%, 42%);
+}
+   @media (min-width: 600px) {
+       .container {
+        height: 350px;
+        width: 600px;
+        position: absolute;
+        top:36%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       }
+       .mobile-img {
+        display: none;
+       }
+       .desk-img {
+        display: flex;
+        width: 500px;
+        position: absolute;
+        top: 260px;
+        left: 50px;
+       }
+       .dice-img{
+        padding: 17.8px;
+    }
+       .redo-btn {
+        left: 270px;
+       }
+     }
